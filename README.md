@@ -3,7 +3,6 @@
 A **RESTful API** for managing quizzes, questions, and answers using MongoDB, Express.js, and Node.js.
 
 ## ✨ Features
-- **CRUD Operations**: Create, read, update, and delete quizzes.
 - **Multiple-Choice Questions**: Store and manage MCQs.
 - **Categorization**: Quizzes categorized by topic and difficulty level.
 - **Time Duration**: Set time limits for quizzes.
@@ -50,44 +49,10 @@ Make sure you have the following installed:
    ```
 
 ## 🔗 API Endpoints
-### Quizzes
-#### Get All Quizzes
+### Quiz
+#### Get All Quiz
 ```http
-GET /api/quizzes
-```
-#### Get Quiz by ID
-```http
-GET /api/quizzes/:id
-```
-#### Create a Quiz
-```http
-POST /api/quizzes
-```
-**Request Body:**
-```json
-{
-  "title": "Genetics and Evolution",
-  "description": "",
-  "difficulty_level": "Medium",
-  "duration": 10,
-  "questions": [
-    {
-      "description": "What is the basic unit of heredity?",
-      "options": [
-        { "description": "Gene", "is_correct": true },
-        { "description": "Cell", "is_correct": false }
-      ]
-    }
-  ]
-}
-```
-#### Update a Quiz
-```http
-PUT /api/quizzes/:id
-```
-#### Delete a Quiz
-```http
-DELETE /api/quizzes/:id
+GET /api/quiz
 ```
 
 ## 📂 Project Structure
@@ -111,6 +76,4 @@ DELETE /api/quizzes/:id
 4. Push to your branch (`git push origin feature-branch`)
 5. Open a Pull Request
 
-## 📜 License
-This project is licensed under the MIT License.
 
